@@ -3,17 +3,41 @@
 .container{
     background-image: url(../images/sean-stratton-98014-unsplash.jpg);
     background-size: cover;
-    height: 700px;
+    height: 640px;
+    margin-top: 8px;
 }
 
 .card {
     visibility: hidden;
+    display: inline-block;
+    position: absolute;
+    width: 600px;
+    height: 588px;
+}
+
+#portFolioCard {
+    visibility: hidden;
+    display: inline-block;
+    position: absolute;
+    width: 1052px;
+    height: 588px;
+    overflow: auto;
+    
 }
 
 .portfolioImage {
     position: relative;
-    float: left;
-    width: 240px;
-    height: 240px;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+
+#contactCard {
     visibility: hidden;
+    display: inline-block;
+    position: absolute;
+    width: 600px;
+    height: 588px;
+    overflow: auto;
+    
 }

@@ -12,29 +12,50 @@ var myPage = {
 }
 
 //Click event to display About Me
-$('#aboutMe').click(function(){
+$('#aboutMeButton').click(function(){
     if (!myPage.aboutMeState){
-        $('.card').css('visibility','visible');
+        $('.card').css('visibility','hidden');
+        myPage.portFolioState = 0;
+        myPage.contactMeState = 0;
+        $('#aboutMeCard').css('visibility','visible');
         myPage.aboutMeState = 1;
     }
     else {
-        $('.card').css('visibility','hidden');
+        $('#aboutMeCard').css('visibility','hidden');
         myPage.aboutMeState = 0;
     }
 
 });
 
-//Click event to display portfolio
+//Click event to display Portfolio
 $('#portfolioButton').click(function(){
     if (!myPage.portFolioState){
-        $('#portfolio').css('visibility','visible');
+        $('.card').css('visibility','hidden');
+        myPage.aboutMeState = 0;
+        myPage.contactMeState = 0;
+        $('#portFolioCard').css('visibility','visible');
         myPage.portFolioState = 1;
     }
     else {
-        $('#portfolio').css('visibility','hidden');
+        $('#portFolioCard').css('visibility','hidden');
         myPage.portFolioState = 0;
     }
 
+});
+
+//Click event to play display contact Card
+$('#contactButton').click(function(){
+    if (!myPage.contactMeState){
+        $('.card').css('visibility','hidden');
+        myPage.aboutMeState = 0;
+        myPage.portFolioState = 0;
+        $('#contactCard').css('visibility','visible');
+        myPage.contactMeState = 1;
+   }
+   else {
+        $('#contactCard').css('visibility','hidden');
+        myPage.contactMeState = 0;
+   } 
 });
 
 //Click event to play radio sound clip
@@ -49,6 +70,8 @@ $('#toggleRadio').click(function(){
         radio.radioState = 0;
    } 
 });
+
+
 
 
 //Check out W3CSCHOOLS for instructions on how to include sound on your own webpage, like this function.

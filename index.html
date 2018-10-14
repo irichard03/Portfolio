@@ -20,9 +20,9 @@
                     <div class="nav-wrapper yellow lighten-5">
                       <a href="#!" class="brand-logo orange-text"><i class="material-icons">public</i>Ian Richard's Portfolio</a>
                       <ul class="right hide-on-med-and-down">
-                        <li><a href="#!" id="aboutMe"><i class="material-icons orange-text">person</i></a></li>
+                        <li><a href="#!" id="aboutMeButton"><i class="material-icons orange-text">person</i></a></li>
                         <li><a href="#!" id="portfolioButton"><i class="material-icons orange-text">view_module</i></a></li>
-                        <li><a href="#!"><i class="material-icons orange-text">smartphone</i></a></li>
+                        <li><a href="#!" id="contactButton"><i class="material-icons orange-text">smartphone</i></a></li>
                         <li><a href="#!" id="toggleRadio"><i class="material-icons orange-text">radio</i></a></li>
                       </ul>
                     </div>
@@ -34,22 +34,86 @@
         <div class="container">
             <div class="row">
                 <div class="col s12 m7">
-                    <div class="card">
+                    
+                    <!--About Me-->
+                    <div class="card" id="aboutMeCard">
                         <div class="card-image">
                             <img src="assets/images/ThisGuy.jpg">
                             <span class="card-title">About</span>
                         </div>
                         <div class="card-content">
-                            <p>I am a freelance web developer out of Houston Texas, available to deliver interactive, mobile responsive, private and small business websites.</p>
+                            <p>Ian is a technical support engineer working for Stewart Title, and does freelance work as a webdeveloper and technical writer.  He graduated from Texas A&amp;M in 2003 with a B.A. in English, is a member of the Society for Technical Communication and Houston Archaeological Society. </p>
                         </div>
                         <div class="card-action">
                             <a href="https://www.linkedin.com/in/ian-richard-75485b9"><img src="assets/images/In-2C-54px-R.png"></a>
                         </div>
                     </div>
-                </div>
+
+                    <!--Portfolio-->
+                    <div class="card" id="portFolioCard">                   
+                        <span class="card-title">Portfolio</span>
+                        <hr>
+                                <div class="card-content left">
+                                    <img class ="portfolioImage" src="assets/images/fightGame.JPG">
+                                    <span class="card-title">Fight Game</span>
+                                    <div class="card-action">
+                                        <a href="https://github.com/irichard03/Project1">View on GitHub</a>
+                                    </div>
+                                </div>
+
+                                <div class="card-content left">
+                                    <img class ="portfolioImage" src="assets/images/GiphyAPi.JPG">
+                                    <span class="card-title">GiphyApi</span>
+                                    <div class="card-action">
+                                        <a href="https://github.com/irichard03/GiphyPuff">View on GitHub</a>
+                                    </div>
+                                </div>
+
+                                <div class="card-content left">
+                                    <img class ="portfolioImage" src="assets/images/jqueryAce.JPG">
+                                    <span class="card-title">JQuery Ace</span>
+                                    <div class="card-action">
+                                        <a href="https://github.com/irichard03/unit-4-game">View on GitHub</a>
+                                    </div>
+                                </div>
+
+                                <div class="card-content left">
+                                    <img class ="portfolioImage" src="assets/images/TrainScheduler.JPG">
+                                    <span class="card-title">Train Scheduler</span>
+                                    <div class="card-action">
+                                        <a href="https://github.com/irichard03/TrainScheduler">View on GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        <!--Contact Form-->
+                    <div class="card" id="contactCard">                   
+                        <span class="card-title">Contact</span>
+                        <hr>
+                        <div class="card-content left">
+                            <form>
+                                <span class="card-title">Name</span>
+                                <input id="name">
+                                
+                                <span class="card-title">e-Mail</span>
+                                <input id="email" placeholder="email@domain.com">
+                                
+                                <span class="card-title">Comment</span>
+                                <textarea id="message" style="resize:none"></textarea>
+                                
+                                <a class="waves-effect waves-light orange btn">Submit</a>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                    
+
+                 </div>
             </div>
+            </section>
         </div>
-    </section>
+    
 
     
     
