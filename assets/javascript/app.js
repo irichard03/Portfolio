@@ -5,15 +5,40 @@ var radio = {
     song: new Sound("assets/music/ArtieShaw.mp3")
 };  
 
+var myPage = {
+    aboutMeState: 0,
+    portFolioState: 0,
+    contactMeState: 0
+}
 
 //Click event to display About Me
 $('#aboutMe').click(function(){
-    $('.card').css('visibility','visible');
+    if (!myPage.aboutMeState){
+        $('.card').css('visibility','visible');
+        myPage.aboutMeState = 1;
+    }
+    else {
+        $('.card').css('visibility','hidden');
+        myPage.aboutMeState = 0;
+    }
+
+});
+
+//Click event to display portfolio
+$('#portfolioButton').click(function(){
+    if (!myPage.portFolioState){
+        $('#portfolio').css('visibility','visible');
+        myPage.portFolioState = 1;
+    }
+    else {
+        $('#portfolio').css('visibility','hidden');
+        myPage.portFolioState = 0;
+    }
+
 });
 
 //Click event to play radio sound clip
 $('#toggleRadio').click(function(){
-   console.log("The Radio Plays");
     if (!radio.radioState){
        radio.song.play();
        radio.radioState = 1;
