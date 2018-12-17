@@ -1,9 +1,10 @@
 //Variable Declarations
-
+/*disabled radio
 var radio = {
     radioState: 0,
     song: new Sound("assets/music/ArtieShaw.mp3")
 };  
+*/
 
 var myPage = {
     aboutMeState: 0,
@@ -59,6 +60,7 @@ $('#contactButton').click(function(){
 });
 
 //Click event to play radio sound clip
+/*disabled radio
 $('#toggleRadio').click(function(){
     if (!radio.radioState){
        radio.song.play();
@@ -70,11 +72,10 @@ $('#toggleRadio').click(function(){
         radio.radioState = 0;
    } 
 });
-
-
-
+*/
 
 //Check out W3CSCHOOLS for instructions on how to include sound on your own webpage, like this function.
+/*  Disabled radio
 function Sound(src) {
     this.sound = document.createElement("audio");
     this.sound.src = src;
@@ -89,3 +90,4 @@ function Sound(src) {
         this.sound.pause();
     }
 }
+*/
